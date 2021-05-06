@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    color: white;
+    background: brown;
+    margin-bottom: 5em;
+}
+
+main{
+    margin: auto;
+    width: 90%;
+}
+
+.calculator{
+    overflow: hidden;
+    border-radius: 10px;
+    border: 3px solid burlywood;
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);
+    grid-template-rows:repeat(2, .4fr)repeat(5, .6fr);
+    margin: auto;
+    height: 50vh;
+    width: 95%;
+    max-width: 500px;
+}
+
+.btn{
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px black;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .2em;
+    border-radius: 10px;
+    border: 1px brown solid;
+    width: 85%;
+}
+
+.btn:hover{
+    font-size: 2.3rem;
+    box-shadow: 2px 2px 2px black;
+}
+
+#screens{
+    position: relative;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    height: 100%;
+}
+#topscreen{
+    font-size: 1.5rem;
+    padding: .3em 1em 0 0;
+    text-align: right;
+    width: 100%;
+    height: 100%;
+    border: 2px solid burlywood;
+    border-bottom: 0;
+    grid-column: 1/5;
+    grid-row: 1/2 ;
+}
+
+#lowerscreen{
+    position: relative;
+    font-size: 1.5rem;
+    padding: .3em 1em 0 0;
+    text-align: right;
+    width: 100%;
+    height: 100%;
+    border: 2px solid burlywood;
+    border-top: 0px;
+    border-left: 0px;
+    grid-column: 2/5;
+    grid-row: 2/3;
+}
+
+#operatorscreen{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: .3em;
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-size: 2rem;
+    border: 2px solid burlywood;
+    border-right: 0;
+    border-top: 0;
+}
+
+#nine{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#eight{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#seven{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+#add{
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+#six{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+#five{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+#four{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+#minus{
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+
+#three{
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+#two{
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+#one{
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+
+#multiply{
+    grid-column: 4/5;
+    grid-row: 5/6;
+}
+
+#doublezero{
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+
+#zero{
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+
+#dot{
+    grid-column: 3/4;
+    grid-row: 6/7;
+}
+
+#divide{
+    grid-column: 4/5;
+    grid-row: 6/7;
+}
+
+#erase{
+    grid-column: 1/2;
+    grid-row: 7/8;
+}
+
+
+#clear{
+    grid-column: 2/3;
+    grid-row: 7/8;
+}
+
+#equals{
+    grid-column: 3/5;
+    grid-row: 7/8;
+}
+
+@media (min-width: 529px) {
+    .calculator{
+        height: 55vh;
+ 
+    }
+}
+
+@media (min-width: 601px) {
+    .calculator{
+        height: 60vh;
+ 
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    background: brown;
+    width: 100%;
+    height: 10vh;
+}
